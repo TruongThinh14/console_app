@@ -1,4 +1,5 @@
 package File;
 
-public class Dependent {
+public class Dependent extends Customer {
+    // No specific operations needed beyond those inherited from Customer
 }
