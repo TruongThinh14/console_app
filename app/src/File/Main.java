@@ -48,11 +48,11 @@ public class Main {
         // Sample UI interaction
         System.out.println("Welcome to the Insurance Claims Management System!");
 
-
-
     }
 
     private static boolean authenticateUser(String s3914412, String abc123) {
-        return true;
+        String username = s3914412;
+        String password = abc123;
+        return username.equals("s3914412") && password.equals("abc123");
     }
 }
