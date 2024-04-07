@@ -1,39 +1,58 @@
 package File;
 
-import File.Customer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Login functionality
+        boolean isLoggedIn = false;
+        while (!isLoggedIn) {
+            System.out.println("Login:");
+            System.out.print("Username: ");
+            String username = scanner.nextLine();
+            System.out.print("Password: ");
+            String password = scanner.nextLine();
+
+            // Implement user authentication logic
+            // Replace with your actual authentication logic
+            isLoggedIn = authenticateUser(username, password);
+
+            if (!isLoggedIn) {
+                System.out.println("Invalid username or password. Please try again.\n");
+            }
+        }
+
+
+
         // Sample data initialization
         List<Customer> customers = new ArrayList<>();
         List<Claim> claims = new ArrayList<>();
 
         // Populate sample customers, insurance cards, and claims
         Customer policyHolder = new PolicyHolder();
-        policyHolder.setId("c1234567");
-        policyHolder.setFullName("John Doe");
+        policyHolder.setId("s3914412");
+        policyHolder.setFullName("ThinhNguyen");
         // Initialize and set insurance card
-        // Add claims to the policy holder
+        // Add claims to the policyholder
 
         Dependent dependent = new Dependent();
-        dependent.setId("c7654321");
-        dependent.setFullName("Jane Doe");
-        // Initialize and set insurance card
-        // Add claims to the dependent
-
-        // Add dependents to the policyholder
-        ((PolicyHolder) policyHolder).addDependent(dependent);
-
-        // Initialize ClaimManager with initial claims
+        dependent.setId("s3914412");
+        dependent.setFullName("ThinhNguyen");
 
         // Sample UI interaction
         System.out.println("Welcome to the Insurance Claims Management System!");
 
 
 
+    }
+
+    private static boolean authenticateUser(String s3914412, String abc123) {
+        return true;
     }
 }

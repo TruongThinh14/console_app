@@ -9,10 +9,10 @@ public class Customer {
     private static List<Claim> claims;
     private static List<Customer> dependents; // List of dependents for policyholder
 
-    public void setId(String c1234567) {
+    public void setId(String s3914412) {
     }
 
-    public void setFullName(String johnDoe) {
+    public void setFullName(String ThinhNguyen) {
     }
 
     // Constructor, getters, and setters
